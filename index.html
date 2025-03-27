@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papercliks Task</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="logo.jpg" alt="K/NET/C Logo" />
+      </div>
+      <div class="contact-info">
+        <span>Talk to a Consolidation Specialist</span>
+        <i class="fas fa-phone"></i>
+        <span>(888) 888-8888</span>
+      </div>
+    </header>
+
+    <div class="title">
+      <h1>What Is The Best Time To Reach You?</h1>
+    </div>
+
+    <div class="container">
+      <div id="step1" class="step">
+        <select id="timeSelect">
+          <option value="">Choose Your Time</option>
+          <option value="8 AM CST">8 AM CST</option>
+          <option value="9 AM CST">9 AM CST</option>
+          <option value="10 AM CST">10 AM CST</option>
+          <option value="11 AM CST">11 AM CST</option>
+          <option value="12 PM CST">12 PM CST</option>
+        </select>
+        <p><small>(All times are in CST)</small></p>
+        <button class="btn" onclick="nextStep(2)">
+          CONTINUE  <i class="fas fa-chevron-right"></i>
+        </i>
+        </button>
+      </div>
+
+      <div id="step2" class="step hidden">
+        <h2>Add Your Personal Details</h2>
+        <input type="text" id="firstName" placeholder="First Name" />
+        <input type="text" id="lastName" placeholder="Last Name" />
+        <input type="email" id="email" placeholder="Email" />
+        <input type="text" id="phone" placeholder="Phone Number" />
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="agreeTerms" />
+          <label for="agreeTerms">
+            By clicking the button above, you acknowledge, consent and agree to
+            the following: a) Our Privacy Policy and consent to receive notices
+            and other communications electronically. b)We take your privacy
+            seriously. You are providing express written consent for this site
+            to share your information with up to four (4) of its and for,
+            parties calling on behalf of, or authorized third paties on their
+            behalf to contact you (including through automated means; e.g.
+            autodialing, text and pre-recorded messaging) about legal services
+            or other Mass Tort related offers via telephone, mobile device
+            (inluding SMS and MMS) and/or email, even if your telephone number
+            is currently listed on any state, federal, local or corporate Do Not
+            Call list; c) Consent to be contacted is not required in order to
+            purchase goods or revices from or that contact you. You may choose
+            to spesak with an individual service provider by dialing (888)
+            888-8888.
+          </label>
+        </div>
+
+        <button class="btn" onclick="nextStep(3)">
+          SUBMIT YOUR DETAILS <i class="fas fa-chevron-right"></i>
+        </i>
+        </button>
+      </div>
+
+      <div id="step3" class="step hidden">
+        <h2>Summary</h2>
+        <p><strong>Time Selected:</strong> <span id="summaryTime"></span></p>
+        <p><strong>Name:</strong> <span id="summaryName"></span></p>
+        <p><strong>Email:</strong> <span id="summaryEmail"></span></p>
+        <p><strong>Phone:</strong> <span id="summaryPhone"></span></p>
+      </div>
+    </div>
+
+    <section>
+      <div>
+        <p>
+          <small
+            >Terms and Conditions | Privacy Policy | California Privacy</small
+          >
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p class="disclaimer"></p>
+      <small>
+        This site is not a part of the Facebook website or Facebook Inc.
+        Additionally, Facebook does NOT endorse this site. FACEBOOK is a
+        trademark of FACEBOOK, Inc. This site is not a part of the YouTube
+        website or Google, LLC. Additionally, this site is NOT endorsed by
+        Google in any way.
+        <br /><br />
+        While we may provide you preliminary information on whether you qualify
+        for compensation, your local governing body ultimately determines who
+        qualifies and what claims are paid. This site is provided for
+        informational purposes only. If you have questions about whether you
+        qualify, please contact an attorney.
+        <br /><br />THIS IS A PAID ATTORNEY / ADVOCATE ADVERTISEMENT.
+        <br /><br />*While we may provide you preliminary information on whether
+        you may qualify for compensation, the U.S. District Court: Eastern
+        District of North Carolina ultimately determines who quailifies and what
+        claims are paid. This site is provided for informational purposes only.
+        If you have questions about whether your qualify, please contact an
+        attorney. <br /><br />This website uses Google Analytics and Google Ads
+        to track your journey for marketing purposes.
+      </small>
+    </footer>
+  </body>
+</html>
